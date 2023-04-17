@@ -1,6 +1,7 @@
 package tests;
 
 import models.*;
+import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
@@ -12,16 +13,16 @@ import static specs.LoginSpecs.*;
 
 public class ReqresTests {
     @Test
-    void checkUserWithGroovyTest() {
+    void checkColorNameWithGroovyTest() {
 
-        step("Checking user name after 2000 year", () -> {
+        step("Check color's name starting from 2002 year", () -> {
             given(loginRequestSpec)
                     .when()
                     .get("/unknown")
                     .then()
                     .spec(loginResponseSpec)
-                    .body("data.findAll{it.year>2000}.name.flatten()",
-                            hasItems("aqua sky", "fuchsia rose", "true red", "tigerlily", "blue turquoise"));
+                    .body("data.findAll{it.year>2002}.name.flatten()",
+                            CoreMatchers.hasItems("aqua sky", "tigerlily", "blue turquoise"));
         });
     }
 

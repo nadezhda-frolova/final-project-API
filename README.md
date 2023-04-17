@@ -30,12 +30,11 @@
 
 ## :heavy_check_mark: Тест кейсы
 
-- Проверка пользователей после 2000 года рождения при помощи Groovy
+- Проверка главного цвета года по версии Pantone при помощи Groovy
 - Проверка id, name пользователя
 - Создание нового пользователя
 - Обновление данных пользователя
 - Успешная регистрация пользователя
-- Успешное удаление пользователя
 
 ## :computer: Запуск тестов из терминала
 
@@ -45,7 +44,7 @@
 gradle clean test
 ```
 
-## <img width="4%" title="Jenkins" src="media/logo/Jenkins.svg"> Запуск тестов из [Jenkins](https://jenkins.autotests.cloud/job/Sukhinin_diplom_API/)
+## <img width="4%" title="Jenkins" src="media/logo/Jenkins.svg"> Запуск тестов из [Jenkins](https://jenkins.autotests.cloud/job/final-project-API/)
 Для запуска сборки необходимо нажать кнопку <code><strong>*Собрать сейчас*</strong></code>.
 
 <p align="center">
@@ -77,12 +76,6 @@ gradle clean test
 
 <p align="center">
   <img src="media/screen/allure-testops-results.png" alt="dashboard" width="900">
-</p>
-
-### Тест-кейсы
-
-<p align="center">
-  <img src="media/screen/allure-testops-testcases.png" alt="testcase" width="900">
 </p>
 
 ## <img width="4%" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram
